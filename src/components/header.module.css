@@ -18,7 +18,7 @@
 
 .inner-container nav li{
     list-style: none;
-    margin:1.2rem auto;
+    margin:1.2rem 0.5rem;
     text-align: center;
 }
 .inner-container nav a{
@@ -60,6 +60,12 @@
         width: 100%;
         padding:0;
     }
-
-
+}
+@media (max-width: 736px) {
+    .brand-link{
+        width: 30%;
+    }
+    html {
+        font-size: 12px;
+    }
 }

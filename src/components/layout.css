@@ -34,9 +34,12 @@ a:hover{
     }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 736px) {
+    .container{
+        width: 100%;
+    }
     html {
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 
