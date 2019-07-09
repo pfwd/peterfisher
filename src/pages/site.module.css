@@ -1,0 +1,114 @@
+.hero{
+  font-size:1.8rem;
+  line-height:2.2rem;
+    border-bottom:1px solid #DDD;
+
+}
+.hero a{
+    color:#f2923c;
+    text-decoration: none;
+    padding:5px;
+}
+
+.hero a:hover{
+  background-color:#f2923c;
+  color:#FFF;
+}
+
+.summary{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.summary img{
+    width:100%;
+    display:block;
+    border-radius: 20px;
+    margin-right:1.0rem;
+}
+.logo-grid, .button-row{
+    display:flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    flex-wrap: wrap;
+}
+.logo-grid img{
+    padding:1.0rem;
+    display:block;
+    width:25%;
+}
+.invert { filter: invert(100%); }
+.greyscale { filter: grayscale(100%); }
+
+.button-row{
+    margin-top:20px;
+    border-top:1px solid #DDDDDD;
+    padding-top:50px;
+}
+.hero-box, .hero-box-highlight{
+    padding:20px;
+    font-weight: bold;
+    border:1px solid #DDDDDD;
+    background-color:#DDDDDD;
+}
+.hero-box-highlight{
+    background-color:#f2923c;
+    color:#f2923c;
+}
+
+a.hero-box{
+    color:#000000;
+    border-radius: 20px;
+}
+a.hero-box:hover{
+    color:#FFF;
+    cursor: pointer;
+}
+
+a.hero-box-highlight:hover{
+    cursor: pointer;
+}
+
+
+a.hero-box-highlight {
+	color: #000;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #f2923c;
+    border-radius: 20px;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    background-color: #FFFFFF;
+
+}
+a.hero-box-highlight:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nthree;
+
+
+}
+a.hero-box-highlight:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+a.hero-box-highlight:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #f2923c;
+    border-radius: 15px;
+	transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}

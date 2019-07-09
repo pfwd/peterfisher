@@ -1,8 +1,40 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Peter Fisher`,
+    description: `Peter Fisher is a Freelance Web Developer, a coding teacher at How To Code Well and host of the How To Code Well Podcast`,
+    author: `@pfwd`,
+    menuLinks:[
+      {
+        'name' : 'CV',
+        'link' : 'https://github.com/pfwd/cv',
+      },
+      {
+        'name' : 'Websomatic',
+        'link' : 'http://websomatic.co.uk',
+      },
+      {
+        'name' : 'How To Code Well',
+        'link' : 'https://howtocodewell.net',
+      },
+        {
+        'name' : 'Hire Me',
+        'link' : 'mailto:hello@websomatic.co.ukt',
+      },
+    ],
+    footerLinks:[
+      {
+        'name' : 'My Talks',
+        'link' : 'https://www.youtube.com/playlist?list=PLZdsdjcJ44WXOVd6HWU-D-j6Knr01B29b',
+      },
+      {
+        'name' : 'Latest Projects',
+        'link' : 'http://websomatic.co.uk',
+      },
+      {
+        'name' : 'Hire Me',
+        'link' : 'mailto:hello@websomatic.co.uk',
+      },
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

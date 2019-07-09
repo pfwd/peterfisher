@@ -1,0 +1,38 @@
+.header {
+    background: #555;
+    border-bottom: 10px solid #f2923c;
+}
+
+.outer-container {
+    margin-bottom: 0.25rem;
+}
+
+.inner-container {
+    margin: 0 auto;
+    width: 960px;
+    padding: 0.45rem 1.0875rem;
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.inner-container nav li{
+    list-style: none;
+    padding:0.45rem;
+}
+.inner-container nav a{
+    background-color:#FFF;
+    color:#333;
+    padding:20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.inner-container nav a:hover{
+    background-color:#f2923c;
+    color:#FFF;
+}
+.brand-link {
+    color: #FFF;
+    text-decoration: none;
+}
