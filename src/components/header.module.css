@@ -18,14 +18,15 @@
 
 .inner-container nav li{
     list-style: none;
-    padding:0.45rem;
+    margin:1.2rem auto;
+    text-align: center;
 }
 .inner-container nav a{
     background-color:#FFF;
     color:#333;
-    padding:20px;
+    padding:0.625rem;
     text-decoration: none;
-    border-radius: 6px;
+    border-radius: 0.625rem;
     font-weight: bold;
 }
 .inner-container nav a:hover{
@@ -35,4 +36,30 @@
 .brand-link {
     color: #FFF;
     text-decoration: none;
+    line-height:3rem;
+    display: flex;
+    width:100%;
+    margin-right: 10px;
+    margin-left:10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.menu ul{
+    list-style: none;
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+
+@media (max-width: 480px) {
+    .inner-container{
+        width: 100%;
+        padding:0;
+    }
+
+
 }

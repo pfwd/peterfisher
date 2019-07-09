@@ -1,7 +1,6 @@
 .footer {
     background: #555;
     border-top: 10px solid #f2923c;
-    position: fixed;
     width:100%;
     bottom:0;
 }
@@ -38,6 +37,7 @@
 .brand-link {
     color: #FFF;
     text-decoration: none;
+    line-height: 2em;
 }
 
 .social-container a.icon{
@@ -47,9 +47,20 @@
 }
 .social-container ul{
     list-style: none;
+    padding-left:10px;
 }
 
 .social-container i{
     margin-right:10px;
     color:#DDDDDD;
+}
+
+@media (max-width: 480px) {
+    .inner-container{
+        width: 100%;
+        padding:0;
+    }
+
+.hide-mobile { display: none; }
+
 }

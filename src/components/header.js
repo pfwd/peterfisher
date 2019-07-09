@@ -8,12 +8,12 @@ const Header = ({ siteTitle, menuLinks }) => (
   <header className={styles.header}>
     <div className={styles.outerContainer}>
       <div className={styles.innerContainer}>
-        <h1 style={{ margin: 0, flex: 1 }}>
-          <Link to="/" className={styles.brandLink}>{siteTitle}</Link>
+        <h1  className={styles.brandLink}>
+          <Link to="/" >{siteTitle}</Link>
         </h1>
-        <div>
-          <nav>
-            <ul style={{ display: "flex", flex: 1 }}>
+
+          <nav role="navigation" className={styles.menu}>
+            <ul className={styles.menu}>
               {menuLinks.map(link => (
                 <li key={link.name}>
                   <Link to={link.link}>
@@ -25,7 +25,6 @@ const Header = ({ siteTitle, menuLinks }) => (
           </nav>
         </div>
       </div>
-    </div>
   </header>
 )
 

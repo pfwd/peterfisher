@@ -40,15 +40,10 @@ const Layout = ({ children }) => (
                     crossOrigin="anonymous"/>
     </Helmet>
       <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
+        <div class="container">
+            <div class="inner-container">
+                {children}
+            </div>
         </div>
       <Footer footerLinks={data.site.siteMetadata.footerLinks}/>
       </React.Fragment>

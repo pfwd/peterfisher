@@ -21,7 +21,7 @@ const Footer = ({ footerLinks }) => (
                   <li><i className="fab fa-skype"></i><a className={styles.icon} href='skype:peter.fisher.websomatic?chat' >Skype</a></li>
               </ul>
           </div>
-          <nav>
+          <nav className={styles.hideMobile}>
                 <ul style={{ display: "flex", flex: 1 }}>
               {footerLinks.map(link => (
                 <li key={link.name}>
