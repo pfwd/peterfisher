@@ -2,7 +2,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Link from "./link"
-import styles from "./header.module.css"
+import * as styles from "./header.module.css"
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header className={styles.header}>

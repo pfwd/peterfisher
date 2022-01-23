@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import styles from "./site.module.css"
+import * as styles from "./site.module.css"
 
 import fasthosts from "../images/fasthosts.png";
 import agrantec from "../images/agrantec.png";
