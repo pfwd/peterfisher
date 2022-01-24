@@ -2,7 +2,7 @@
   "items": [
     {
       "title": "Docker for WordPress developers",
-      "slug": "docker-for-wordpress-developers",
+      "slug": "/talks/docker-for-wordpress-developers",
       "video_url": "https://youtu.be/ZQ6AkyvEaHE",
       "slide_url": "",
       "events": [
@@ -17,7 +17,7 @@
     },
     {
       "title": "Software Complexities",
-      "slug": "software-complexities",
+      "slug": "/talks/software-complexities",
       "video_url": "https://youtu.be/ZQ6AkyvEaHE",
       "slide_url": "https://speakerdeck.com/player/d89287da25a14fdfb4b3cf06ca59c867",
       "events": [
@@ -32,7 +32,7 @@
     },
     {
       "title": "Using a framework or not?",
-      "slug": "using-a-framework-or-not",
+      "slug": "/talks/using-a-framework-or-not",
       "video_url": "https://youtu.be/T8R3YTrqt6U",
       "slide_url": "https://speakerdeck.com/player/bb5ca6d744414969bb1d5ceda7e9537d",
       "events": [
@@ -47,7 +47,7 @@
     },
     {
       "title": "How to put your Docker image on a diet",
-      "slug": "how-to-put-your-docker-image-on-a-diet",
+      "slug": "/talks/how-to-put-your-docker-image-on-a-diet",
       "video_url": "https://youtu.be/uiABt9axPNo",
       "slide_url": "https://speakerdeck.com/player/d48fd1e79ddb4aee86144e76e483d633",
       "events": [

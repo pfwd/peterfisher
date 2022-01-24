@@ -39,6 +39,7 @@
     color:#333;
     text-decoration: none;
     font-weight: bold;
+    padding:10px;
 }
 .inner-container nav a:hover{
     background-color:#f2923c;

@@ -6,6 +6,11 @@ body{
   color:#333;
   background-color: #FFF;
 }
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
 a{
     color:#f2923c;
@@ -21,8 +26,7 @@ a{
     padding: 0 1.0875rem 1.45rem;
 }
 a:hover{
-  background-color:#f2923c;
-  color:#FFF;
+  text-decoration:underline;
 }
 
 @media (max-width: 480px) {
