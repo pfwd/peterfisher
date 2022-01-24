@@ -12,6 +12,8 @@ import { Helmet } from "react-helmet"
 import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
+import menuLinks from "../data/menu_links.json"
+import footerLinks from "../data/footer_links.json"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -20,14 +22,6 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
-            menuLinks {
-              name
-              link
-            }
-            footerLinks {
-              name
-              link
-            }
           }
         }
       }
@@ -39,13 +33,13 @@ const Layout = ({ children }) => (
                     integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
                     crossOrigin="anonymous"/>
     </Helmet>
-      <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+      <Header menuLinks={menuLinks.links} siteTitle={data.site.siteMetadata.title} />
         <div class="container">
             <div class="inner-container">
                 {children}
             </div>
         </div>
-      <Footer footerLinks={data.site.siteMetadata.footerLinks}/>
+      <Footer footerLinks={footerLinks.links}/>
       </React.Fragment>
     )}
   />

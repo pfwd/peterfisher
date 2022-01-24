@@ -1,0 +1,75 @@
+{
+  "items": [
+    {
+      "title": "Docker for WordPress developers",
+      "video_url": "https://youtu.be/ZQ6AkyvEaHE",
+      "slide_url": "",
+      "events": [
+        {
+          "in_person": true,
+          "title": "Cheltenham WordPress meetup",
+          "date": "21/11/2019",
+          "location": "Cheltenham",
+          "link": "https://www.meetup.com/Cheltenham-WordPress-Meetup/events/266262367"
+        }
+      ]
+    },
+    {
+      "title": "Software Complexities",
+      "video_url": "https://youtu.be/ZQ6AkyvEaHE",
+      "slide_url": "https://speakerdeck.com/player/d89287da25a14fdfb4b3cf06ca59c867",
+      "events": [
+        {
+          "in_person": true,
+          "title": "PHP South West",
+          "date": "08/10/2018",
+          "location": "Bristol",
+          "link": "https://www.meetup.com/php-sw/events/253335570/"
+        }
+      ]
+    },
+    {
+      "title": "Using a framework or not?",
+      "video_url": "https://youtu.be/T8R3YTrqt6U",
+      "slide_url": "https://speakerdeck.com/player/bb5ca6d744414969bb1d5ceda7e9537d",
+      "events": [
+        {
+          "in_person": true,
+          "title": "PHP South West",
+          "date": "11/04/2018",
+          "location": "Bristol",
+          "link": "https://www.meetup.com/php-sw/events/249042620/"
+        }
+      ]
+    },
+    {
+      "title": "How to put your Docker image on a diet",
+      "video_url": "https://youtu.be/uiABt9axPNo",
+      "slide_url": "https://speakerdeck.com/player/d48fd1e79ddb4aee86144e76e483d633",
+      "events": [
+        {
+          "in_person": true,
+          "title": "PHP South West",
+          "date": "11/10/2017",
+          "location": "Bristol",
+          "link": "https://www.meetup.com/php-sw/events/243917107/"
+        },
+        {
+          "in_person": true,
+          "title": "PHP Oxford Meetup",
+          "date": "30/10/2019",
+          "location": "Oxford",
+          "link": "https://www.meetup.com/PHP-Oxford/events/265114978"
+        },
+        {
+          "in_person": true,
+          "title": "PHP South Wales Meetup",
+          "date": "26/09/2019",
+          "location": "Wales",
+          "link": "https://www.meetup.com/PHP-South-Wales/events/264731393"
+        }
+      ]
+    }
+  ]
+}
+

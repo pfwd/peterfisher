@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "name": "About",
+      "link": "/"
+    },
+    {
+      "name": "Talks",
+      "link": "/talks/"
+    },
+    {
+      "name": "How To Code Well",
+      "link": "https://howtocodewell.net"
+    }
+  ]
+}
