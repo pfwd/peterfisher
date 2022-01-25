@@ -24,15 +24,16 @@
     flex: auto;
     list-style: none;
     text-align: center;
-    margin: 0 10px;
     display: block;
+
+    margin: 0 0.20rem
 }
 .inner-container nav a{
     background-color:#e7d8d8;
     color:#333;
     text-decoration: none;
     font-weight: bold;
-    padding:10px;
+    padding:0.50rem;
 }
 .inner-container nav a:hover{
     background-color:#1c1a1a;
@@ -42,6 +43,7 @@
     line-height:3rem;
     display: inline-block;
     margin:0;
+    text-align: center;
 }
 .brand-link a {
     text-decoration: none;
@@ -54,7 +56,6 @@
 .menu{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 .menu ul{
     list-style: none;

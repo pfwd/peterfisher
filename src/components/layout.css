@@ -2,10 +2,11 @@ body{
   margin:0;
   font-family: 'Open Sans', Arial, serif;
   font-size:1.2em;
-  line-height: 1.4em;
+  line-height: 2.3em;
   color:#e7d8d8;
   background-color: #1c1a1a;
 }
+
 .site {
     display: flex;
     min-height: 100vh;
@@ -34,11 +35,11 @@ a:hover{
     width: 560px;
     height: 314px;
 }
-
-
+w
 @media (max-width: 480px) {
     .container{
         width: 100%;
+        padding:4px;
     }
     html {
         font-size: 12px;

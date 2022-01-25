@@ -46,23 +46,6 @@
     border-radius: 20px;
     margin-right:1.0rem;
 }
-.logo-grid, .button-row{
-    display:flex;
-    justify-items: center;
-    align-items: center;
-    justify-content: space-between;
-    width:100%;
-    flex-wrap: wrap;
-    background-color: #FFF;
-    margin-top:40px;
-}
-.logo-grid img{
-    padding:1.0rem;
-    display:block;
-    width:25%;
-}
-.invert { filter: invert(100%); }
-.greyscale { filter: grayscale(100%); }
 
 .button-row{
     margin-top:20px;

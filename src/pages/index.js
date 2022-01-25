@@ -3,15 +3,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import * as styles from "./site.module.css"
+import {graphql} from "gatsby";
+import TalkList from "../components/talkList";
 
-import fasthosts from "../images/fasthosts.png";
-import agrantec from "../images/agrantec.png";
-import above_the_line from "../images/above_the_line.png";
-import fs4s from "../images/fs4s.png";
-import kloc from "../images/kloc.jpg";
-import ecancer from "../images/ecancer.png";
-
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Peter Fisher Freelance Web Developer" />
     <div className={styles.hero}>
@@ -24,16 +19,25 @@ const IndexPage = () => (
         <img alt="Peter Fisher Freelance Web Developer" src="https://1.gravatar.com/avatar/74ae5c84e2bfdccfbbe56ea0bd556af5?s=96&amp;r=g"/>
           <p>I have <strong>20 years experience in web development</strong> and can be hired as a contractor, a consultant, or teacher. My specialism is in <strong>PHP</strong> using <strong>Symfony</strong> and <strong>Laravel</strong> or <strong>Flask</strong> and <strong>Django</strong> with <strong>Python</strong>. I can also work with <strong>Gatsby</strong>, <strong>React</strong> and <strong>VueJs</strong>. For a complete list of my skills and experience please see my <a href="https://github.com/pfwd/cv" target='_blank'  rel="noopener noreferrer">CV</a>.</p>
       </div>
+      <h2>Latest talks</h2>
+      { data.allSitePage.edges.map (({ node }) => (
+          <TalkList data={node.pageContext} key={node.id}/>
+      ))}
 
-      <div className={styles.logoGrid}>
-          <img alt='ecancer' src={ecancer} className={styles.invert}/>
-          <img alt='Fasthosts' src={fasthosts} className={styles.greyscale}/>
-          <img alt='Agrantec' src={agrantec} className={styles.greyscale}/>
-          <img alt='Above The Line' src={above_the_line} className={styles.greyscale}/>
-          <img alt='FS4S' src={fs4s} className={styles.greyscale}/>
-          <img alt='Kloc' src={kloc}  className={styles.greyscale}/>
-      </div>
   </Layout>
 )
 
 export default IndexPage
+
+export const query = graphql `
+    query {
+        allSitePage(limit: 3, filter:{ path: { regex: "/(/talks/)([a-z-0-9]+)/" }}) {
+            edges {
+                node {
+                    id
+                    pageContext
+                }
+            }
+        }
+    }
+`
