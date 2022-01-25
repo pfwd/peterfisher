@@ -13,7 +13,6 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 import menuLinks from "../data/menu_links.json"
-import footerLinks from "../data/footer_links.json"
 
 const Layout = ({children}) => (
     <StaticQuery
@@ -36,11 +35,9 @@ const Layout = ({children}) => (
                 <div className="site">
                     <Header menuLinks={menuLinks.links} siteTitle={data.site.siteMetadata.title}/>
                     <div class="container">
-                        <div class="inner-container">
-                            {children}
-                        </div>
+                        {children}
                     </div>
-                    <Footer footerLinks={footerLinks.links}/>
+                    <Footer/>
                 </div>
             </React.Fragment>
         )}

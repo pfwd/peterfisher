@@ -6,7 +6,6 @@ import * as styles from "./header.module.css"
 
 const Header = ({ siteTitle, menuLinks }) => (
   <header className={styles.header}>
-    <div className={styles.outerContainer}>
       <div className={styles.innerContainer}>
         <h1  className={styles.brandLink}>
           <Link to="/" >{siteTitle}</Link>
@@ -24,7 +23,6 @@ const Header = ({ siteTitle, menuLinks }) => (
             </ul>
           </nav>
         </div>
-      </div>
   </header>
 )
 

@@ -3,8 +3,8 @@ body{
   font-family: 'Open Sans', Arial, serif;
   font-size:1.2em;
   line-height: 1.4em;
-  color:#333;
-  background-color: #FFF;
+  color:#e7d8d8;
+  background-color: #1c1a1a;
 }
 .site {
     display: flex;
@@ -14,21 +14,16 @@ body{
 
 a{
     color:#f2923c;
-    text-decoration: none;
-    padding:2px;
+    text-decoration: underline;
+}
+a:hover{
+    color:#e7d8d8;
 }
 .container{
     margin: 0 auto;
     width: 960px;
 
 }
-.inner-container{
-    padding: 0 1.0875rem 1.45rem;
-}
-a:hover{
-  text-decoration:underline;
-}
-
 .talkIframe {
     border: 0px;
     background: padding-box padding-box rgba(0, 0, 0, 0.1);

@@ -1,8 +1,7 @@
 .footer {
     background: #555;
-    border-top: 10px solid #f2923c;
     width:100%;
-    margin-top: auto;
+    margin-top: 20px;
 }
 
 .outer-container {
@@ -39,17 +38,24 @@
     text-decoration: none;
     line-height: 2em;
 }
-
+.social-container {
+    margin-left:auto;
+}
+.social-container ul{
+    display:flex;
+    list-style: none;
+    padding:0;
+    margin:5px 0;
+}
+.social-container ul li{
+    margin:0 10px;
+    line-height: 0;
+}
 .social-container a.icon{
     background-repeat: no-repeat;
     color:#FFF;
 
 }
-.social-container ul{
-    list-style: none;
-    padding-left:10px;
-}
-
 .social-container i{
     margin-right:10px;
     color:#DDDDDD;
