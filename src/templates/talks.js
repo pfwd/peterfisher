@@ -7,7 +7,7 @@ const template =  ({data}) => {
     return (
         <Layout>
             <h1>Talks</h1>
-            <p>I have given various different talks ranging from web frameworks to Docker</p>
+            <p>I have given various talks ranging from web frameworks to Docker</p>
 
             { data.allSitePage.edges.map (({ node }) => (
                 <TalkList data={node.pageContext} key={node.id}/>

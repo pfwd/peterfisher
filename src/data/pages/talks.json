@@ -1,9 +1,28 @@
 {
   "items": [
     {
+      "title": "Code with confidence using PHPStan",
+      "slug": "/talks/code-with-confidence-using-phpstan",
+      "content": "<p>With new projects starting on PHP 8 and the increasing use of data types and upgrades that PHP 8 brings, the use of static analysis has become increasingly popular.</p><p>PHPStan has recently released version 1 which includes stricter checks and a pro version that offers more versatility.</p><p>For new projects, the use of static analysis is a great tool to keep fresh code clean and conformative, but how can static analysis be used on legacy projects and how can PHPStan increase our confidence when building upon our code bases?</p>",
+      "brief": "<p>For new projects, the use of static analysis is a great tool to keep fresh code clean and conformative, but how can static analysis be used on legacy projects and how can PHPStan increase our confidence when building upon our code bases?</p>",
+      "video_url": "",
+      "slide_url": "",
+      "events": [
+        {
+          "in_person": true,
+          "title": "Symfony User Group Aveiro",
+          "date": "22/02/2022",
+          "location": "Portugal",
+          "link": "https://www.meetup.com/sfugaveiro/events/283356907/"
+        }
+      ]
+    },
+    {
       "title": "Docker for WordPress developers",
       "slug": "/talks/docker-for-wordpress-developers",
-      "video_url": "https://youtu.be/ZQ6AkyvEaHE",
+      "content": "<p>WordPress sites may outgrow their build tools due to increased complexity, maintenance overheads, feature development and traffic load. At this point alternative tools for WordPress development, deployment and distribution may be required.</p><p>It is important for both developers and content creators of WordPress to be aware of these complexities and to gain this understanding before it is too late.</p><p>Docker is tool that could be considered to help streamline and mitigate these issues.</p><p>This talk explains what Docker is and why it should be considered as a build and distribution tool for WordPress.</p><p>Of course, Docker adds a level of complexity to an existing setup which needs to be justified and this is discussed in depth during the talk.</p>",
+      "brief": "<p>This talk explains what Docker is and why it should be considered as a build and distribution tool for WordPress.</p>",
+      "video_url": "",
       "slide_url": "",
       "events": [
         {
@@ -18,7 +37,9 @@
     {
       "title": "Software Complexities",
       "slug": "/talks/software-complexities",
-      "video_url": "https://youtu.be/ZQ6AkyvEaHE",
+      "content": "<p>During the life cycle of a system there can be vast amounts of internal and external influences that can lead to over complicated processes, infrastructure, design architectures, and ugly code.</p><p>Decisions are sometimes made that can make software costly and difficult to maintain. The more complicated the software is the more time it takes to build, test and deploy.</p><p>What are the key areas that make software so complicated and can we identify these before they get out of hand?</p>",
+      "brief": "<p>What are the key areas that make software so complicated and can we identify these before they get out of hand?</p>",
+      "video_url": "https://www.youtube.com/embed/ZQ6AkyvEaHE",
       "slide_url": "https://speakerdeck.com/player/d89287da25a14fdfb4b3cf06ca59c867",
       "events": [
         {
@@ -33,7 +54,9 @@
     {
       "title": "Using a framework or not?",
       "slug": "/talks/using-a-framework-or-not",
-      "video_url": "https://youtu.be/T8R3YTrqt6U",
+      "content": "<p>Should you use a framework or not?</p>",
+      "brief": "<p>Should you use a framework or not?</p>",
+      "video_url": "https://www.youtube.com/embed/T8R3YTrqt6U",
       "slide_url": "https://speakerdeck.com/player/bb5ca6d744414969bb1d5ceda7e9537d",
       "events": [
         {
@@ -48,7 +71,9 @@
     {
       "title": "How to put your Docker image on a diet",
       "slug": "/talks/how-to-put-your-docker-image-on-a-diet",
-      "video_url": "https://youtu.be/uiABt9axPNo",
+      "content": "<p>Docker images can become very large and this can have a negative impact on your projects development and deployment.</p><p>To keep your Docker images on a strict diet it is important to understand how Docker images are built and how containerisation is different to virtualization.</p><p>This talk explains some of the fundamentals behind Docker and demonstrates how to take a >1 GB PHP 7.4 web server running Symfony 4 to under 200MB</p>",
+      "brief": "<p>This talk explains some of the fundamentals behind Docker and demonstrates how to take a >1 GB PHP 7.4 web server running Symfony 4 to under 200MB</p>",
+      "video_url": "https://www.youtube.com/embed/uiABt9axPNo",
       "slide_url": "https://speakerdeck.com/player/d48fd1e79ddb4aee86144e76e483d633",
       "events": [
         {
