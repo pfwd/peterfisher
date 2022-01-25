@@ -2,7 +2,10 @@
   font-size:1.8rem;
   line-height:2.2rem;
   border-bottom:1px solid #DDD;
-
+    padding-bottom:40px;
+}
+.hero p{
+    margin:0;
 }
 .hero a{
     color:#f2923c;
@@ -26,8 +29,9 @@
     align-items: center;
     justify-content: space-around;
     font-size:1.4rem;
-    line-height:1.8rem;
-
+    line-height:2rem;
+    margin-top:40px;
+    margin-bottom:40px;
 }
 
 .summary img{
@@ -49,6 +53,8 @@
     justify-content: space-between;
     width:100%;
     flex-wrap: wrap;
+    background-color: #FFF;
+    margin-top:40px;
 }
 .logo-grid img{
     padding:1.0rem;

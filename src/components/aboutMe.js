@@ -3,7 +3,6 @@ import * as styles from "./../pages/site.module.css"
 
 const AboutMe = ({}) => (<>
     <div className={styles.about_me}>
-        <h3>About Me</h3>
         <div className={styles.summary}>
             <img alt="Peter Fisher Contract Web Developer"
                  src="https://1.gravatar.com/avatar/74ae5c84e2bfdccfbbe56ea0bd556af5?s=96&amp;r=g"/>
