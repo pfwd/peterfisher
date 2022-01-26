@@ -41,7 +41,19 @@ a:hover{
     width: 560px;
     height: 314px;
 }
-w
+.talk-title{
+    margin-bottom:0;
+}
+.talk-info-container{
+    margin-bottom:1rem;
+}
+.talk-info-container h2{
+    margin-bottom:0.5rem;
+}
+.talk-info{
+    font-size:1.3rem;
+    color:#888;
+}
 @media (max-width: 480px) {
     .container{
         width: 100%;

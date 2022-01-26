@@ -60,6 +60,9 @@
     .inner-container{
         width: 100%;
     }
+    .footer{
+        width: auto;
+    }
 
 .hide-mobile { display: none; }
 
