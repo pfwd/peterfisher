@@ -2,19 +2,14 @@
     background: #555;
     width:100%;
     margin-top: auto;
-}
 
-.outer-container {
-    margin-bottom: 0.25rem;
+    padding:1rem;
 }
 
 .inner-container {
     margin: 0 auto;
     width: 960px;
-    padding: 0.45rem 1.0875rem;
     display: flex;
-    justify-items: space-between;
-    align-items: center;
 }
 
 .inner-container nav li{
@@ -39,7 +34,7 @@
     line-height: 2em;
 }
 .social-container {
-    margin-left:auto;
+    margin:auto;
 }
 .social-container ul{
     display:flex;
@@ -64,7 +59,6 @@
 @media (max-width: 480px) {
     .inner-container{
         width: 100%;
-        padding:0;
     }
 
 .hide-mobile { display: none; }

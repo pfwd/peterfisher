@@ -1,12 +1,17 @@
 body{
   margin:0;
   font-family: 'Open Sans', Arial, serif;
-  font-size:1.2em;
-  line-height: 2.3em;
+  font-size:1.4rem;
+  line-height: 2rem;
   color:#e7d8d8;
   background-color: #1c1a1a;
 }
-
+h1{
+    font-size:2rem;
+}
+h2{
+    font-size:1.8rem;
+}
 .site {
     display: flex;
     min-height: 100vh;
@@ -23,6 +28,7 @@ a:hover{
 .container{
     margin: 0 auto;
     width: 960px;
+    padding:2rem 1rem;
 
 }
 .talkIframe {
@@ -48,7 +54,7 @@ w
 
 @media (max-width: 736px) {
     .container{
-        width: 100%;
+        width: auto;
     }
     html {
         font-size: 12px;

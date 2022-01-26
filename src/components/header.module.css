@@ -1,6 +1,6 @@
 .header {
     background: #555;
-    margin-bottom:40px;
+    padding:1rem;
 }
 
 .inner-container {
@@ -43,7 +43,6 @@
     line-height:3rem;
     display: inline-block;
     margin:0;
-    text-align: center;
 }
 .brand-link a {
     text-decoration: none;
@@ -69,6 +68,17 @@
     .inner-container{
         width: 100%;
         padding:0;
+        display: block;
+    }
+    .inner-container .brand-link{
+        width: 100%;
+        padding:0;
+        text-align:center;
+        margin-bottom:1rem;
+        margin-top:1rem;
+    }
+    nav{
+        margin-bottom:1rem;
     }
 }
 @media (max-width: 736px) {
