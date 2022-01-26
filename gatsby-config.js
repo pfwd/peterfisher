@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Peter Fisher`,
-    description: `Peter Fisher is a Freelance Web Developer, a coding teacher at How To Code Well and host of the How To Code Well Podcast`,
+    description: `Peter Fisher is a UK based PHP contractor, a coding teacher and podcast host at How To Code Well`,
     author: `@pfwd`,
   },
   plugins: [
