@@ -1,7 +1,7 @@
 import React from "react"
 import * as styles from "./../pages/site.module.css"
 
-const AboutMe = ({}) => (<>
+const AboutMe = () => (<>
     <div className={styles.about_me}>
         <div className={styles.summary}>
             <img alt="Peter Fisher Contract Web Developer"

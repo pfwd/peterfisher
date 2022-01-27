@@ -1,73 +1,97 @@
-body{
-  margin:0;
-  font-family: 'Open Sans', Arial, serif;
-  font-size:1.4rem;
-  line-height: 2rem;
-  color:#e7d8d8;
-  background-color: #1c1a1a;
+body {
+    margin: 0;
+    font-family: 'Open Sans', Arial, serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #e7d8d8;
+    background-color: #1c1a1a;
 }
-h1{
-    font-size:2rem;
+
+h1 {
+    font-size: 2rem;
 }
-h2{
-    font-size:1.8rem;
+
+h2 {
+    font-size: 1.8rem;
 }
+
 .site {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 
-a{
-    color:#f2923c;
+a {
+    color: #f2923c;
     text-decoration: underline;
 }
-a:hover{
-    color:#e7d8d8;
+
+a:hover {
+    color: #e7d8d8;
 }
-.container{
+
+.container {
     margin: 0 auto;
     width: 960px;
-    padding:2rem 1rem;
 
 }
+
+.iframeContainer {
+    text-align: center;
+}
+
+.iframe {
+    max-width: 560px;
+    max-height: 314px;
+}
+
 .talkIframe {
-    border: 0px;
+    border: 0;
     background: padding-box padding-box rgba(0, 0, 0, 0.1);
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px;
-    width: 560px;
-    height: 314px;
+
 }
-.talk-title{
-    margin-bottom:0;
+
+.talk-title {
+    margin-bottom: 0;
 }
-.talk-info-container{
-    margin-bottom:1rem;
+
+.talk-info-container {
+    margin-bottom: 1rem;
 }
-.talk-info-container h2{
-    margin-bottom:0.5rem;
+
+.talk-info-container h2 {
+    margin-bottom: 0.5rem;
 }
-.talk-info{
-    font-size:1.3rem;
-    color:#888;
+.contentContainer {
+    padding-top: 2rem;
 }
+.talk-info {
+    font-size: 1.3rem;
+    color: #888;
+}
+
 @media (max-width: 480px) {
-    .container{
+    .container {
         width: 100%;
-        padding:4px;
     }
+    .contentContainer {
+        padding: 2rem;
+    }
+
     html {
         font-size: 12px;
     }
 }
 
 @media (max-width: 736px) {
-    .container{
-        width: auto;
+    .container {
+        width: 100%;
     }
+
     html {
         font-size: 12px;
     }
@@ -76,6 +100,15 @@ a:hover{
 @media (min-width: 768px) {
     html {
         font-size: 14px;
+    }
+
+    .iframe {
+        width: 560px;
+        height: 314px;
+    }
+
+    .iframeContainer {
+        text-align: left;
     }
 }
 

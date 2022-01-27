@@ -35,7 +35,9 @@ const Layout = ({children}) => (
                 <div className="site">
                     <Header menuLinks={menuLinks.links} siteTitle={data.site.siteMetadata.title}/>
                     <div className="container">
-                        {children}
+                        <div className="contentContainer">
+                            {children}
+                        </div>
                     </div>
                     <Footer/>
                 </div>

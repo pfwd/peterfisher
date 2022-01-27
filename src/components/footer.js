@@ -1,9 +1,8 @@
 import PropTypes from "prop-types"
 import React from "react"
 import * as styles from "./footer.module.css"
-import Link from "./link";
 
-const Footer = ({ }) => (
+const Footer = () => (
   <footer className={styles.footer}>
       <div className={styles.innerContainer}>
           <div className={styles.socialContainer}>

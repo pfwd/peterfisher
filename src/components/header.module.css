@@ -8,7 +8,6 @@
     width: 960px;
     padding: 0.45rem 1.0875rem;
     display: flex;
-    justify-items: space-between;
     align-items: center;
 }
 

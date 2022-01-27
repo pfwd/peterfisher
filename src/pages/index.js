@@ -12,9 +12,9 @@ const IndexPage =  ({data}) => {
 
     return (
         <Layout>
-            <SEO title="Peter Fisher Freelance Web Developer" />
+            <SEO title="Peter Fisher PHP Contractor" />
             <div className={styles.hero}>
-                <p>Hi, I Peter. I'm a <strong>UK-based PHP contractor</strong> and <strong>consultant</strong> at <a href="http://websomatic.co.uk" target="_blank" rel="noopener noreferrer">Websomatic</a>, developing <strong>API's</strong> and <strong>Web Apps</strong> using <strong>PHP</strong>, <strong>Python</strong>, <strong>Docker</strong> and <strong>JavaScript</strong>.
+                <p>Hi, I'm Peter. A <strong>UK-based PHP contractor</strong> and <strong>consultant</strong> at <a href="http://websomatic.co.uk" target="_blank" rel="noopener noreferrer">Websomatic</a>, developing <strong>API's</strong> and <strong>Web Apps</strong> using <strong>PHP</strong>, <strong>Python</strong>, <strong>Docker</strong> and <strong>JavaScript</strong>.
                     I <strong>teach programming</strong> and I'm a video instructor at Manning Publications and Packt Publications.
                     I am also the <strong>host</strong> of the <a href="https://howtocodewell.fm" target="_blank" rel="noopener noreferrer">How To Code Well podcast</a> and <a href="https://youtube.com/howtocodewell" target='_blank' rel="noopener noreferrer">YouTube channel</a>.</p>
             </div>
@@ -31,7 +31,7 @@ const IndexPage =  ({data}) => {
                 <TalkList data={node.frontmatter} key={node.id}/>
             ))}
 
-            <h1>Posts</h1>
+            <h1>Latest posts</h1>
             { data.posts.edges.map (({ node }) => (
                 <PostList data={node.frontmatter} key={node.id}/>
             ))}

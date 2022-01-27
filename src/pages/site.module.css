@@ -24,7 +24,7 @@
     margin-bottom: 10px;
 }
 
-.about_me p {
+.about_me p, .summary p {
     padding: 0;
     margin: 0;
 }
