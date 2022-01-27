@@ -13,18 +13,23 @@ export default function TalkTemplate({ data: { markdownRemark } }) {
             <div className="post-body" dangerouslySetInnerHTML={{ __html: html }} />
             {frontmatter.slide_url !=='' && renderSlides(frontmatter)}
             {frontmatter.video_url !=='' && renderVideo(frontmatter)}
-            <h2>Events</h2>
-            <ul>
-                {frontmatter.events.map(event => (
-                    <li><a href={event.link} target={'_blank'} rel="noreferrer">{event.title}</a> in {event.location} {event.date}</li>
-                ))}
-            </ul>
+            {frontmatter.events !== null && renderEvents(frontmatter)}
             <AboutMe/>
         </Layout>
     );
 }
 
-
+const renderEvents = function(frontmatter)
+{
+    return (<>
+        <h2>Events</h2>
+        <ul>
+            {frontmatter.events.map(event => (
+                <li><a href={event.link} target={'_blank'} rel="noreferrer">{event.title}</a> in {event.location} {event.date}</li>
+            ))}
+        </ul>
+    </>)
+}
 const renderSlides = function(talk)
 {
     return (<>
@@ -51,7 +56,7 @@ const renderVideo = function(talk)
 
 export const pageQuery = graphql`
   query ($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    markdownRemark(id: { eq: $id } ) {
       html
       frontmatter {
         title
