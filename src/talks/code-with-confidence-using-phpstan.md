@@ -7,8 +7,14 @@ brief: "For new projects, the use of static analysis is a great tool to keep fre
 video_url: ""
 slide_url: ""
 events:
+-
+    in_person: true
+    title: "PHP South West"
+    date: "2022-02-09"
+    location: "Bristol, UK"
+    link: "https://www.meetup.com/php-sw/events/283490357/"
 - 
-   in_person: true
+   in_person: false
    title: "Symfony User Group Aveiro"
    date: "2022-02-22"
    location: "Portugal"
