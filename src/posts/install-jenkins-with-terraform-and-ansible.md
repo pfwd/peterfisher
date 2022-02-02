@@ -167,7 +167,7 @@ resource "local_file" "hosts" {
       webserver_private_ip = module.site.jenkins-site-private-ip
     }
   )
-  filename = "../../ansible/hosts"
+  filename = "../ansible/hosts"
 }
 ```
 
@@ -281,4 +281,14 @@ Outputs:
 webserver_id = "<VPS_ID>"
 webserver_ip = "<VPS_PUBLIC_IP>"
 webserver_private_ip = "<VPS_PRIVATE_IP>"
+```
+There should also be a `hosts` file in the `ansible` directory with the populated IP addresses.  It should look similar to the following
+```text
+all:
+  children:
+    webservers:
+      hosts:
+        webserver_1:
+          ansible_host: <VPS_PUBLIC_IP>
+          private_ip: <VPS_PRIVATE_IP>
 ```
