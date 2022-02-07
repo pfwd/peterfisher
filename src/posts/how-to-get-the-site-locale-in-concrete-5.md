@@ -3,7 +3,7 @@ type: "blog"
 slug: "/how-to-get-the-site-locale-in-concrete-5"
 date: "2022-02-07"
 title: "How to get the site locale in Concrete 5"
-excerpt: "Using composer to run scripts"
+excerpt: "This is how to get the site locale in Concrete 5"
 
 ---
 This is how you get the site locale in Concrete 5
