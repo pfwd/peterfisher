@@ -12,6 +12,7 @@ Terraform will be used to provision the Linode VPS and Ansible will be used to i
 
 - [Setup](#setup)
 - [Ignore files from Git](#ignore-files-from-git)
+- [Create a vault password](#create-a-vault-password)
 - [Create a Linode VPS with Terraform](#create-a-linode-vps-with-terraform)
   - [Create Terraform inputs](#create-terraform-inputs)
   - [Create Terraform outputs](#create-terraform-outputs)
@@ -22,6 +23,10 @@ Terraform will be used to provision the Linode VPS and Ansible will be used to i
   - [Create the main file for the site module](#create-the-main-file-for-the-site-module)
   - [Create the output file for the site module](#create-the-output-file-for-the-site-module)
   - [Provision the Linode VPS](#provision-the-linode-vps)
+- [Install software with Ansible](#install-software-with-ansible)
+  - [Create an update Ansible role](#create-an-update-ansible-role)
+  - [Create a firewall Ansible role](#create-a-firewall-ansible-role)
+  - [Run the Ansible playbook](#run-the-ansible-playbook)
 
 
 ## Setup
@@ -39,8 +44,11 @@ The first thing to do is to create the following folder structure.
 ansible/
 └───roles/
     └───jenkins/
+        └───tasks/
     └───firewall/
-    └───ssh/
+        └───tasks/
+    └───upgrade/
+        └───tasks/
 terraform/
 └───modules/
     └───site/
@@ -56,6 +64,7 @@ Create a `.gitignore` file in the root directory with the following
 
 # Ansible
 ansible/hosts
+ansible/.vault_pass.txt
 
 # Terraform
 terraform/.terraform.lock.hcl
@@ -64,6 +73,12 @@ terraform/terraform.tfvars
 terraform/terraform.tfstate
 terraform/.terraform.tfstate.lock.info
 terraform/terraform.tfstate.backup
+```
+
+## Create a vault password
+Create the file `ansible/.vault_pass.txt` with a random vault password.  This will be used later in the Ansible steps.
+```text
+SomeRandomString
 ```
 
 ## Create a Linode VPS with Terraform
@@ -291,4 +306,76 @@ all:
         webserver_1:
           ansible_host: <VPS_PUBLIC_IP>
           private_ip: <VPS_PRIVATE_IP>
+```
+
+## Install software with Ansible
+
+Create the file `ansible/ansible.cfg` that will hold the Ansible configuration
+```text
+[defaults]
+inventory = hosts
+host_key_checking = false
+vault_password_file = .vault_pass.txt
+```
+### Create an update Ansible role
+
+Create the file `ansible/roles/upgrade/tasks/main.yml` with the following yaml code which will update the package cache on the Linode VPS
+```yaml
+- name: Update and upgrade apt packages
+  become: yes
+  apt:
+    upgrade: yes
+    update_cache: yes
+    cache_valid_time: 86400
+```
+### Create a firewall Ansible role
+
+Create the file `ansible/roles/firewall/tasks/main.yml` with the following yaml code which will use `ufw` to lock down the webserver. 
+
+This will do the following:
+- Allow SSH on port 22
+- Allow HTTP requests on port 80
+- Allow HTTPS requests on port 443
+- Set the default policy to deny
+- Enable firewall logging
+
+```yaml
+- name: Allow SSH
+  ufw:
+    rule: allow
+    port: "22"
+    proto: tcp
+
+- name: Allow Port 80
+  ufw:
+    rule: allow
+    port: "80"
+    proto: tcp
+
+- name: Allow Port 443
+  ufw:
+    rule: allow
+    port: "443"
+    proto: tcp
+
+- name: Set firewall default policy
+  ufw:
+    state: enabled
+    policy: deny
+
+- name: Set logging
+  ufw:
+    logging: on
+```
+
+### Run the Ansible playbook
+To run the playbook, move into the `ansible` directory and run the following command.
+
+**Command arguments**
+
+- `-i` = host inventory file.  This has automatically been created by Terraform
+- `-u` = The user that will run the commands
+
+```bash
+$ ansible-playbook -i ./hosts playbook.yaml -u root
 ```
