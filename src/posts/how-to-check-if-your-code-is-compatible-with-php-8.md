@@ -3,7 +3,7 @@ type: "blog"
 slug: "/how-to-check-if-your-code-is-compatible-with-php-8"
 date: "2022-02-10"
 title: "How to check if your code is compatible with PHP 8"
-excerpt: "Using composer to run scripts"
+excerpt: "Using PHP_CodeSniffer and PHPCompatibility to check if your project can be upgraded to a different version of PHP"
 
 ---
 
@@ -11,7 +11,7 @@ PHPCs can be used to check if your code base is compatible with a different vers
 
 ## Install
 
-First install PHPCS if you haven't yet done so
+First install PHP_CodeSniffer if you haven't yet done so
 
 ```bash
 composer global require "squizlabs/php_codesniffer=*"
@@ -23,7 +23,7 @@ Then install php-compatibility
 composer global require "phpcompatibility/php-compatibility"
 ```
 
-You may need to set the PHPCS config path to use PHPCompatibility
+You may need to set the PHP_CodeSniffer config path to use PHPCompatibility
 
 ```bash
 phpcs --config-set installed_paths /path/to/PHPCompatibility
