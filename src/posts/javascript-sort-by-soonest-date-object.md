@@ -1,7 +1,7 @@
 ---
 type: "blog"
 slug: "/javascript-sort-by-soonest-date-object"
-date: "2022-01-26"
+date: "2022-02-12"
 title: "How to sort an array of JavaScript objects by soonest date"
 excerpt: "How to "
 
