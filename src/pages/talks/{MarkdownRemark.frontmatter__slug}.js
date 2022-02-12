@@ -25,7 +25,7 @@ const renderEvents = function(frontmatter)
         <h2>Events</h2>
         <ul>
             {frontmatter.events.map(event => (
-                <li><a href={event.link} target={'_blank'} rel="noreferrer">{event.title}</a> in {event.location} {event.date}</li>
+                <li key={event.link}><a href={event.link} target={'_blank'} rel="noreferrer">{event.title}</a> in {event.location} {event.date}</li>
             ))}
         </ul>
     </>)
