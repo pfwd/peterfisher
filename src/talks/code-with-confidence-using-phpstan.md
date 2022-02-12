@@ -19,7 +19,12 @@ events:
    date: "2022-02-22"
    location: "Portugal"
    link: "https://www.meetup.com/sfugaveiro/events/283356907/"
-
+-
+    in_person: false
+    title: "North West Drupal User Group"
+    date: "2022-03-08"
+    location: "Manchester, UK"
+    link: "https://www.meetup.com/nwdrupal/events/283808251/"
 
 ---
 With new projects starting on PHP 8 and the increasing use of data types and upgrades that PHP 8 brings, the use of static analysis has become increasingly popular.
