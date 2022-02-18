@@ -56,3 +56,5 @@ Now re-run the GatsbyJS develop command to test the changes
 npm run develop
 ```
 You should only be seeing posts that have a status of published
+
+Now I can get back to crafting the draft blog posts without worry that a post might accidentally be published. 
