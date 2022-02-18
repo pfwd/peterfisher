@@ -3,8 +3,8 @@ type: "blog"
 slug: "/javascript-sort-by-soonest-date-object"
 date: "2022-02-12"
 title: "How to sort an array of JavaScript objects by soonest date"
-excerpt: "How to "
-
+excerpt: "Sorting an array of JavaScript objects by the soonest date can be quite tricky. This guide demonstrates how to do it even when the JavaScript objects have dates in the future or the past"
+status: published
 ---
 Let's say you have an array of JavaScript objects, each containing a date. The objects are jumbled up, and you need to sort the array by the soonest date.
 

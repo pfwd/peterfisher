@@ -4,7 +4,7 @@ slug: "/how-to-check-if-your-code-is-compatible-with-php-8"
 date: "2022-02-10"
 title: "How to check if your code is compatible with PHP 8"
 excerpt: "Using PHP_CodeSniffer and PHPCompatibility to check if your project can be upgraded to a different version of PHP"
-
+status: published
 ---
 
 PHPCs can be used to check if your code base is compatible with a different version on PHP. This is very handy if you want to check if your project can be upgraded to PHP 7.4 or 8.1
