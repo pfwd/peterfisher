@@ -7,7 +7,7 @@ brief: "For new projects, the use of static analysis is a great tool to keep fre
 video_url: ""
 slide_url: ""
 events:
--
+- 
     in_person: true
     title: "PHP South West"
     date: "2022-02-09"
@@ -19,7 +19,13 @@ events:
    date: "2022-02-22"
    location: "Portugal"
    link: "https://www.meetup.com/sfugaveiro/events/283356907/"
--
+- 
+    in_person: false
+    title: "PHPBenelux"
+    date: "2022-03-10"
+    location: "Antwerpen, Belgium"
+    link: "https://www.meetup.com/PHPBenelux/"
+- 
     in_person: false
     title: "North West Drupal User Group"
     date: "2022-03-08"
