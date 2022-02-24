@@ -16,4 +16,4 @@ LOCAL_PATH=/local/path/to/build
 
 2. Change to bin folder `cd bin`
 3. Export env variables `export $(grep -v '^#' .env | xargs -0)`
-4. Run deployment script `x./deploy.sh`
+4. Run deployment script `./deploy.sh`
