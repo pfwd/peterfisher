@@ -5,7 +5,7 @@ date: "2022-02-22"
 title: "Code with confidence using PHPStan"
 brief: "For new projects, the use of static analysis is a great tool to keep fresh code clean and conformative, but how can static analysis be used on legacy projects and how can PHPStan increase our confidence when building upon our code bases?"
 video_url: ""
-slide_url: "http://howtocodewell.net/slides/code-with-confidence-using-phpstan.html"
+slide_url: "http://peterfisher.me.uk/slides/code-with-confidence-using-phpstan.html"
 events:
 - 
     in_person: true
@@ -37,4 +37,4 @@ With new projects starting on PHP 8 and the increasing use of data types and upg
 
 PHPStan has recently released version 1 which includes stricter checks and a pro version that offers more versatility.</p><p>For new projects, the use of static analysis is a great tool to keep fresh code clean and conformative, but how can static analysis be used on legacy projects and how can PHPStan increase our confidence when building upon our code bases?
 
-View the [slides](http://howtocodewell.net/slides/code-with-confidence-using-phpstan.html)
+View the [slides](http://peterfisher.me.uk/slides/code-with-confidence-using-phpstan.html)
