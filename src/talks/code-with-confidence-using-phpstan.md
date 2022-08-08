@@ -37,4 +37,5 @@ With new projects starting on PHP 8 and the increasing use of data types and upg
 
 PHPStan has recently released version 1 which includes stricter checks and a pro version that offers more versatility.</p><p>For new projects, the use of static analysis is a great tool to keep fresh code clean and conformative, but how can static analysis be used on legacy projects and how can PHPStan increase our confidence when building upon our code bases?
 
-View the [slides](http://peterfisher.me.uk/slides/code-with-confidence-using-phpstan.html)
+
+View the [updated slides](/slides/code-with-confidence-using-phpstan.html)
