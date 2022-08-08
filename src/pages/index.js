@@ -60,12 +60,13 @@ export const pageQuery = graphql`
         }
       }
     }
-    posts: allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog"}}},  sort: { order: DESC, fields: [frontmatter___date] }) {
+    posts: allMarkdownRemark(filter: {frontmatter: {type: {eq: "blog"},  status: {eq: "published"}}},  sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
           id
           excerpt(pruneLength: 250)
           frontmatter {
+            excerpt
             slug
             title
           }

@@ -4,7 +4,7 @@ slug: "/install-jenkins-with-terraform-and-ansible-on-linode-vps"
 date: "2022-02-02"
 title: "Install Jenkins with terraform and ansible on a Linode VPS"
 excerpt: "A guide to installing Jenkins with Terraform and Ansible"
-
+status: published
 ---
 In this guide Jenkins will be installed on a Linode VPS using Terraform and Ansible. 
 

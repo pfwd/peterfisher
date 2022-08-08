@@ -4,7 +4,7 @@ slug: "/php-composer-scripts"
 date: "2022-01-26"
 title: "How to run scripts in composer"
 excerpt: "Using composer to run scripts"
-
+status: published
 ---
 To run scripts using composer update the `scripts` section in `composer.json` 
 
