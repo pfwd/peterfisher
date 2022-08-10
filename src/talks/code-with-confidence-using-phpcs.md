@@ -1,7 +1,7 @@
 ---
 type: "talk"
 slug: "/code-with-confidence-using-phpcs"
-date: "2022-02-22"
+date: "2022-08-11"
 title: "Code with confidence using PHPCS"
 brief: "For projects of all sizes the enforcement of coding standards is very important and key to increasing code confidence within a team.  How can coding standards be introduced to legacy projects or projects that have a mixture of coding styles?"
 video_url: ""
