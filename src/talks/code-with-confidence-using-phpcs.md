@@ -13,6 +13,12 @@ events:
     date: "2022-08-11"
     location: "Nottingham, UK"
     link: "https://www.meetup.com/phpminds-in-nottingham/events/287656021/"
+-
+    in_person: true
+    title: "PHP London"
+    date: "2022-11-24"
+    location: "London, UK"
+    link: "https://www.meetup.com/phplondon/events/289746815/"
 
 ---
 For projects of all sizes the enforcement of coding standards is very important and key to increasing code confidence within a team.  
