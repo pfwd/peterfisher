@@ -1,5 +1,5 @@
 import React from 'react'
-import GatsbyLink from 'gatsby-link'
+import { Link as GatsbyLink } from 'gatsby-link'
 
 const Link = props => {
   if (props.to.startsWith('/')) {
