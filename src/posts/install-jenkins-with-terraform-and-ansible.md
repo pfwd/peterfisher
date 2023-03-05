@@ -84,7 +84,7 @@ SomeRandomString
 ## Create a Linode VPS with Terraform
 
 Create the file `terraform/terraform.tfvars` and add the following variables
-```terraform
+```bash
 token="<YOUR_LINODE_TOKEN>"
 root_pass="<YOUR_LINODE_ROOT_PASSWORD"
 ssh_key_pub="<PATH_TO_YOUR_SSH_KEY>"
@@ -94,7 +94,7 @@ ssh_key_pub="<PATH_TO_YOUR_SSH_KEY>"
 
 Create the file `terraform/inputs.tf` and add the following inputs
 
-```terraform
+```bash
 variable "token" {
   type = string
   description = "Environment in which to deploy application"
@@ -116,7 +116,7 @@ variable "ssh_key_pub" {
 ### Create Terraform outputs
 Create the file `terraform/outputs.tf` with the following output variables
 
-```terraform
+```bash
 output "webserver_id" {
   value = module.site.jenkins-site-id
 }
@@ -151,7 +151,7 @@ This will do the following:
 - Require the `site` module and provide it the `root_pass` and `ssh_key_pub` variables
 - Create a file in the `ansible` directory with jenkins private and public IPs
 
-```terraform
+```bash
 terraform {
   required_providers {
     linode = {
@@ -189,7 +189,7 @@ resource "local_file" "hosts" {
 ### Create the inputs for the site module
 Create the file `terraform/modules/site/inputs.tf` and add the following terraform code
 
-```terraform
+```bash
 variable "root_pass" {}
 
 variable "ssh_key_pub" {}
@@ -199,7 +199,7 @@ variable "label" {}
 
 ### Create the local variables for the site module
 Create the file `terraform/modules/site/locals.tf` and add the following terraform code
-```jenkins
+```bash
 locals {
   region = "eu-west"
   site_label = "jenkinsSite"
@@ -217,7 +217,7 @@ This will do the following:
 - Create a `lindoe_instance` resource
 - Upgrade the VPS and install Python
 
-```terraform
+```bash
 terraform {
   required_providers {
     linode = {
@@ -264,7 +264,7 @@ This will do the following:
 - Output the public IP address
 - Output the Private IP address
 
-```terraform
+```bash
 output "jenkins-site-id" {
   value = linode_instance.jenkins.id
 }
