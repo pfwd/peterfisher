@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Peter Fisher PHP Contractor" />
       <div className={styles.hero}>
         <p>
-          Hi, I'm Peter. A <strong>UK-based PHP contractor</strong> and{" "}
+          Hi, I&apos;m Peter. A <strong>UK-based PHP contractor</strong> and{" "}
           <strong>consultant</strong> at{" "}
           <a
             href="http://websomatic.co.uk"
@@ -22,10 +22,10 @@ const IndexPage = ({ data }) => {
           >
             Websomatic
           </a>
-          , developing <strong>API's</strong> and <strong>Web Apps</strong>{" "}
+          , developing <strong>API&apos;s</strong> and <strong>Web Apps</strong>{" "}
           using <strong>PHP</strong>, <strong>Python</strong>,{" "}
           <strong>Docker</strong> and <strong>JavaScript</strong>. I{" "}
-          <strong>teach programming</strong> and I'm a video instructor at
+          <strong>teach programming</strong> and I&apos;m a video instructor at
           Manning Publications and Packt Publications. I am also the{" "}
           <strong>host</strong> of the{" "}
           <a
