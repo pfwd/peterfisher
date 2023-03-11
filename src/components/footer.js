@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import * as styles from "./footer.module.css"
 
@@ -42,10 +41,6 @@ const Footer = () => (
     </div>
   </footer>
 )
-
-Footer.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
 Footer.defaultProps = {
   siteTitle: ``,

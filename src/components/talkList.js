@@ -1,4 +1,3 @@
-import PropTypes from "prop-types"
 import React from "react"
 import Link from "./link"
 
@@ -32,21 +31,6 @@ const sortBySoonest = function (events) {
     // Order by soonest
     return dateA - dateB
   })
-}
-
-TalkList.propTypes = {
-  data: PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    slug: PropTypes.string.isRequired,
-    brief: PropTypes.string.isRequired,
-    events: PropTypes.arrayOf(
-      PropTypes.shape({
-        date: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        location: PropTypes.string.isRequired,
-      })
-    ),
-  }),
 }
 
 export default TalkList
