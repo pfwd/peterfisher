@@ -19,3 +19,21 @@ LOCAL_PATH=/local/path/to/build
 4. Run deployment script `./deploy.sh`
 
 gatsby clean && gatsby build && ./bin/deploy.sh
+
+## Commands
+
+### Run prettier
+
+Runs prettier using the `.prettierrc` config.  It will output all the errors that need to be fixed.
+
+```bash
+npm run prettier
+```
+
+### Fix prettier errors
+
+Attempts to fix issues found by prettier using the `.prettierrc` config.
+
+```bash
+npm run fix-prettier
+```
