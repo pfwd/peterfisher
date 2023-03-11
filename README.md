@@ -37,3 +37,11 @@ Attempts to fix issues found by prettier using the `.prettierrc` config.
 ```bash
 npm run fix-prettier
 ```
+
+### Run ESLint
+
+Runs ESLint usinfg the `.eslint.json` config. It will output all the errors that need to be fixed.
+
+```bash
+npm run lint
+```

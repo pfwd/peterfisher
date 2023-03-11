@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link as GatsbyLink } from 'gatsby-link'
+import React from "react"
+import { Link as GatsbyLink } from "gatsby-link"
 
-const Link = props => {
-  if (props.to.startsWith('/')) {
-    return <GatsbyLink {...props} >{props.children}</GatsbyLink>
+const Link = (props) => {
+  if (props.to.startsWith("/")) {
+    return <GatsbyLink {...props}>{props.children}</GatsbyLink>
   }
 
   return (
-    <a {...props} href={props.to} target='_blank' rel="noopener noreferrer">
+    <a {...props} href={props.to} target="_blank" rel="noopener noreferrer">
       {props.children}
     </a>
   )
