@@ -6,30 +6,37 @@ on:
     branches:
       - master
 
-install-steps: &install-steps
-  - uses: actions/checkout@v2
-  - uses: actions/setup-node@v2
-    with:
-      node-version: "14"
-      cache: "npm"
-  - run: npm ci
-
 jobs:
   install:
     runs-on: ubuntu-latest
     steps:
-      - <<: *install-steps
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          cache: "npm"
+      - run: npm ci
 
   prettier:
     runs-on: ubuntu-latest
     needs: install
     steps:
-      - <<: *install-steps
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+          cache: "npm"
+      - run: npm ci
       - run: npm run prettier
 
   lint:
     needs: install
     runs-on: ubuntu-latest
     steps:
-    - <<: *install-steps
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: "14"
+        cache: "npm"
+    - run: npm ci
     - run: npm run lint
