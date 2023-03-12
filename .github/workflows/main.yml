@@ -27,7 +27,7 @@ jobs:
           node-version: "18"
           cache: "npm"
       - run: npm ci
-      - run: tsc
+      - run: npm run test:ts
 
   prettier:
     runs-on: ubuntu-latest
@@ -39,7 +39,7 @@ jobs:
           node-version: "18"
           cache: "npm"
       - run: npm ci
-      - run: npm run prettier
+      - run: npm run test:prettier
 
   lint:
     needs: install
@@ -51,4 +51,20 @@ jobs:
         node-version: "18"
         cache: "npm"
     - run: npm ci
-    - run: npm run lint
+    - run: npm run test:lint
+
+  end-to-end:
+    needs:
+      - install
+      - type-check
+      - prettier
+      - lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+      - run: npm ci
+      - run: npm run test:e2e-headless
