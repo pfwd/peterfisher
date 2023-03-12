@@ -28,9 +28,11 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@types/node": "^18.15.0",
     "@types/react-helmet": "^6.1.6",
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
+    "cypress": "^12.7.0",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
@@ -40,6 +42,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.4",
+    "start-server-and-test": "^2.0.0",
     "typescript": "^4.9.5"
   },
   "keywords": [
@@ -53,12 +56,21 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "npm run ts-check && npm run lint && npm run prettier",
-    "ts-check": "tsc",
-    "lint": "npx eslint src",
-    "fix-lint": "npx eslint src --fix",
-    "prettier": "prettier --config ./.prettierrc --check src/**/*.ts*",
-    "fix-prettier": "prettier --config ./.prettierrc --write src/**/*.ts*"
+    "test": "npm run test:ts && npm run test:lint && npm run test:prettier && npm run test:e2e-headless",
+    "test:ts": "tsc",
+    "test:lint": "npx eslint src",
+    "fix:lint": "npx eslint src --fix",
+    "test:prettier": "prettier --config ./.prettierrc --check src/**/*.ts*",
+    "fix:prettier": "prettier --config ./.prettierrc --write src/**/*.ts*",
+    "cy:headless": "cypress run",
+    "cy:interactive": "cypress open",
+    "test:e2e": "start-server-and-test start http://localhost:8000 cy:interactive",
+    "test:e2e-headless": "start-server-and-test start http://localhost:8000 cy:headless"
+  },
+  "overrides": {
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "^18.0.0"
+    }
   },
   "repository": {
     "type": "git",
