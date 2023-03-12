@@ -1,16 +1,16 @@
 import React from "react"
 import Layout from "../components/layout"
 import TalkList from "../components/talkList"
-import { graphql } from "gatsby"
-import SEO from "../components/seo"
+import { graphql, PageProps } from "gatsby"
+import Seo from "../components/seo"
 import * as styles from "./site.module.css"
 import Link from "./../components/link"
 import PostList from "./../components/postList"
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ data }: PageProps<Queries.IndexPageQuery>) => {
   return (
     <Layout>
-      <SEO title="Peter Fisher PHP Contractor" />
+      <Seo title="Peter Fisher PHP Contractor" />
       <div className={styles.hero}>
         <p>
           Hi, I&apos;m Peter. A <strong>UK-based PHP contractor</strong> and{" "}
@@ -92,7 +92,7 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query {
+  query IndexPage {
     talks: allMarkdownRemark(
       limit: 1
       filter: { frontmatter: { type: { eq: "talk" } } }
