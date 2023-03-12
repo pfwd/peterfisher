@@ -40,8 +40,16 @@ npm run fix-prettier
 
 ### Run ESLint
 
-Runs ESLint usinfg the `.eslint.json` config. It will output all the errors that need to be fixed.
+Runs ESLint using the `.eslint.json` config. It will output all the errors that need to be fixed.
 
 ```bash
 npm run lint
+```
+
+### Run all test commands
+
+Runs TypeScript checks, prettier and ESLint.
+
+```bash
+npm run test
 ```

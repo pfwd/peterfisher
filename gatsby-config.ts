@@ -1,4 +1,5 @@
 module.exports = {
+  graphqlTypegen: true,
   siteMetadata: {
     title: `Peter Fisher`,
     description: `Peter Fisher is a UK based PHP contractor, a coding teacher and podcast host at How To Code Well`,
@@ -6,6 +7,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

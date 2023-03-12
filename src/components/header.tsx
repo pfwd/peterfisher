@@ -1,8 +1,14 @@
 import React from "react"
 import Link from "./link"
 import * as styles from "./header.module.css"
+import type { LinkType } from "../types/LinkType"
 
-const Header = ({ siteTitle, menuLinks }) => (
+interface Props {
+  siteTitle: string
+  menuLinks: LinkType[]
+}
+
+const Header: React.FC = ({ siteTitle, menuLinks }: Props) => (
   <header className={styles.header}>
     <div className={styles.innerContainer}>
       <h1 className={styles.brandLink}>
