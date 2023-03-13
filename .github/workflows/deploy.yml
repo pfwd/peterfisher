@@ -16,4 +16,6 @@ jobs:
           node-version: "18"
           cache: "npm"
       - run: npm ci
+      - git config user.name "$(git log -n 1 --pretty=format:%an)"
+      - git config user.email "$(git log -n 1 --pretty=format:%ae)"
       - run: npm run deploy
