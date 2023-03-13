@@ -1,29 +1,39 @@
 {
   "compilerOptions": {
+    "paths": {
+      "app/*": ["./app/*"],
+      "tests/*": ["./tests/*"]
+    },
     "outDir": "./public/",
     "noImplicitAny": true,
     "module": "es6",
-    "target": "es5",
+    "target": "es6",
+    "rootDir": "./",
     "lib": [
       "es5",
       "dom"
     ],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strictNullChecks": true,
     "skipLibCheck": true,
     "types": [
+      "jest",
       "node"
     ]
   },
   "exclude": [
     "node_modules",
     "public",
-    ".cache"
+    ".cache",
+    "**/*.test.ts",
+    "__tests__"
   ],
   "include": [
+    "../jest.config.js",
+    "../gatsby-ssr.ts",
     "**/*.ts",
     "**/*.tsx"
   ]
