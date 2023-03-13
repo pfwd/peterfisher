@@ -71,6 +71,7 @@ jobs:
       - type-check
       - prettier
       - lint
+      - unit-test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
