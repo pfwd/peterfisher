@@ -85,6 +85,8 @@ jobs:
   deploy:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
+    needs:
+      - end-to-end
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
