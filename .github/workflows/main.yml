@@ -53,12 +53,25 @@ jobs:
     - run: npm ci
     - run: npm run test:lint
 
+  unit-test:
+    needs: install
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+      - run: npm ci
+      - run: npm run test:jest
+
   end-to-end:
     needs:
       - install
       - type-check
       - prettier
       - lint
+      - unit-test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
