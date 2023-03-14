@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/peterfisher",
+  pathPrefix: "/",
   graphqlTypegen: true,
   siteMetadata: {
     title: `Peter Fisher`,
