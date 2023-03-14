@@ -36,6 +36,16 @@ const Footer: React.FC = () => (
               <i className="fab fa-linkedin"></i>
             </a>
           </li>
+          <li>
+            <a
+                href="https://www.youtube.com/howtocodewell"
+                rel="noopener noreferrer"
+                target="_blank"
+                className={styles.icon}
+            >
+              <i className="fab fa-youtube"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
